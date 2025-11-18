@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.6;
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-green-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-900 transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-amber-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-amber-900 transition-colors duration-300;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom colors that match your design */
+:root {
+  --deep-green: #1a3f2d;
+  --rich-brown: #8b4513;
+  --sky-blue: #87ceeb;
+  --cream: #f8f4e9;
+  --warm-gray: #6b7280;
+}
